@@ -4,6 +4,7 @@ import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Services from "@/components/Services";
+import AboutUs from "@/components/AboutUs";
 
 export default function page() {
   const [loading, setLoader] = useState(false);
@@ -26,7 +27,11 @@ export default function page() {
           </header>
 
           <main className="px-10 my-20">
-          <Services />
+            <Services />
+
+           <AboutUs/>
+
+          
           </main>
         </>
       )}
