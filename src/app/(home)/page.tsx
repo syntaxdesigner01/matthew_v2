@@ -9,7 +9,7 @@ import Review from "@/components/HomeComponents/Review";
 import Team from "@/components/HomeComponents/Team";
 import Footer from "@/components/Global/Footer";
 
-export default function page() {
+export default function Home() {
   const [loading, setLoader] = useState(false);
 
   useEffect(() => {
