@@ -1,10 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
-import Loader from "@/components/Loader";
-import Navbar from "@/components/Navbar";
-import Header from "@/components/Header";
-import Services from "@/components/Services";
-import AboutUs from "@/components/AboutUs";
+import Loader from "@/components/HomeComponents/Loader";
+import Navbar from "@/components/HomeComponents/Navbar";
+import Header from "@/components/HomeComponents/Header";
+import Services from "@/components/HomeComponents/Services";
+import AboutUs from "@/components/HomeComponents/AboutUs";
+import Review from "@/components/HomeComponents/Review";
+import Team from "@/components/HomeComponents/Team";
+import Footer from "@/components/Global/Footer";
 
 export default function page() {
   const [loading, setLoader] = useState(false);
@@ -29,10 +32,13 @@ export default function page() {
           <main className="px-10 my-20">
             <Services />
 
-           <AboutUs/>
+            <AboutUs />
+            <Review />
 
-          
+            <Team />
+
           </main>
+          <Footer />
         </>
       )}
     </>
