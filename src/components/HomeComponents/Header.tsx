@@ -14,7 +14,7 @@ export default function Header() {
 
             <div className="">
                 <h1 className="text-4xl text-primary w-[90%] leading-relaxed tracking-wide">Taking Your Productivity To Maximum</h1>
-                <p className="text-white text-xl py-4 w-[70%] leading-relaxed tracking-wide">Focus more on creativity...let's handle productivity</p>
+                <p className="text-white text-xl py-4 w-[70%] leading-relaxed tracking-wide">Focus more on creativity...let&apos;s handle productivity</p>
             </div>
 
             <div className="w-[80%] mt-10">
