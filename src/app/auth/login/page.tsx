@@ -36,7 +36,7 @@ function Login() {
                         <p>Sign up with facebook</p>
                     </div>
 
-                    
+
                     <div className="text-[12px] flex items-center gap-2">
                         <Image src={'/apple.png'} alt="" width={30} height={30} />
 
@@ -50,15 +50,29 @@ function Login() {
                     <p>Or sign up with Email</p>
                     <p className="border-b-2 w-[30%] border-primary"></p>
                 </div>
+
+
+
+                <div className="flex justify-center">
+                    <div className="border-2 bg-white border-slate-200 shadow-xl p-10 rounded-tr-3xl rounded-bl-3xl rounded-md w-[80%] ">
+
+                        <form className=" flex flex-col gap-10">
+                            <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
+                                <legend className="">Your Email</legend>
+                                <input type='email' placeholder='' required className="w-full outline-none  px-4" />
+                            </fieldset>
+
+
+                            <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
+                                <legend>Password</legend>
+                                <input type='email' placeholder='' required className="w-full outline-none  px-4"  />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <form >
-                    <input type='email' placeholder='Email Address' required />
 
-
-                </form>
-            </div>
         </div>
     )
 }
