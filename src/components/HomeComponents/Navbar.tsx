@@ -1,9 +1,10 @@
 "use client";
+import { routes } from "@/routes/routes";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  const route = useRouter();
+  const router = useRouter();
 
   return (
     <nav className="flex fixed w-full top-0 z-50 items-center gap-32  bg-bgDark px-20 text-white py-4 shadow-xl">
@@ -19,7 +20,7 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-10 ">
-          <p>Login</p>
+          <p onClick={()=>router.push(routes.login)}>Login</p>
           <button className="bg-primary px-8 py-2 rounded-xl ">Sign Up</button>
         </div>
       </div>
