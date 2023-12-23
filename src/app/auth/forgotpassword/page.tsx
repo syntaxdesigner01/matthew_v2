@@ -8,15 +8,15 @@ import { FiEye,FiEyeOff } from "react-icons/fi"
 
 function Login() {
 
-    const [showPass,setShowPass] = useState(false)
+
     return (
         <div className="flex flex-col gap-2 w-screen h-full mt-20 items-center justify-center">
             {/* <Navbar/> */}
 
             <div className="text-center gap-4 flex flex-col">
-                <h1 className="font-bold text-3xl">Login <span className="text-primary">Mat</span>thew</h1>
+                <h1 className="font-bold text-3xl">Forgot Password</h1>
 
-                <p>Don&apos;t have an account? <Link href={routes.signup} className="text-primary">Sign Up</Link></p>
+                <p>Remember Password? <Link href={routes.login} className="text-primary">Login</Link></p>
             </div>
 
             <div className="w-[60%] mt-10">
@@ -66,28 +66,16 @@ function Login() {
                                 <input type='email' placeholder='' required className="w-full outline-none  h-full px-4" />
                             </fieldset>
 
-
-                            <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
-                                <legend>Password</legend>
-                                <div className="flex px-2 ">
-                                    <input type={showPass ? 'text' : 'password'} placeholder='' required className="w-full h-full outline-none  px-4" />
-
-                                    {
-                                        showPass ?  
-                                        <FiEyeOff size={20} onClick={() => setShowPass(!showPass)} />:
-                                        <FiEye size={20} onClick={() => setShowPass(!showPass)}  />
-                                    }
-                                </div>
-                            </fieldset>
+                         
                         </form>
 
-                        <div className="flex justify-between mt-4 font-semibold">
-                            <Link href={routes.signup}>Remember Password? <span className="text-primary">Login</span></Link>
-                            <Link href={routes.forgotpassword}>Forget Password?</Link>
+                        <div className="flex justify-start mt-8 font-semibold">
+                            <Link href={routes.login}>Remember Password? <span className="text-primary">Login</span></Link>
+                           
                         </div>
 
                         <div className="mt-4">
-                            <button type='submit' className="w-full h-12 bg-black text-white rounded-lg hover:bg-">Login</button>
+                            <button type='submit' className="w-full h-12 bg-black text-white rounded-lg hover:bg-">Send Mail</button>
                         </div>
                     </div>
                 </div>
