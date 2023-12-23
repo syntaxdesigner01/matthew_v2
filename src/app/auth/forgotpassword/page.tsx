@@ -8,7 +8,7 @@ import { FiEye,FiEyeOff } from "react-icons/fi"
 
 function Login() {
 
-    const [showPass,setShowPass] = useState(false)
+
     return (
         <div className="flex flex-col gap-2 w-screen h-full mt-20 items-center justify-center">
             {/* <Navbar/> */}
@@ -70,7 +70,7 @@ function Login() {
                         </form>
 
                         <div className="flex justify-start mt-8 font-semibold">
-                            <Link href={routes.signup}>Remember Password? <span className="text-primary">Login</span></Link>
+                            <Link href={routes.login}>Remember Password? <span className="text-primary">Login</span></Link>
                            
                         </div>
 

@@ -83,7 +83,7 @@ function Login() {
 
                         <div className="flex justify-between mt-4 font-semibold">
                             <Link href={routes.signup}>Remember Password? <span className="text-primary">Login</span></Link>
-                            <Link href={''}>Forget Password?</Link>
+                            <Link href={routes.forgotpassword}>Forget Password?</Link>
                         </div>
 
                         <div className="mt-4">
