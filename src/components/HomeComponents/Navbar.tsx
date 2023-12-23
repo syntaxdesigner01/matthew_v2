@@ -14,13 +14,13 @@ export default function Navbar() {
 
       <div className="flex gap-20 justify-center pt-4 border-b-4 border-primary px-10 pb-2 rounded-sm">
         <ul className="flex gap-10 items-center ">
-          <li>Home</li>
-          <li>Docs</li>
-          <li>Blog</li>
+          <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer">Docs</li>
+          <li className="cursor-pointer">Blog</li>
         </ul>
 
         <div className="flex items-center gap-10 ">
-          <p onClick={()=>router.push(routes.login)}>Login</p>
+          <p className="cursor-pointer" onClick={()=>router.push(routes.login)}>Login</p>
           <button className="bg-primary px-8 py-2 rounded-xl ">Sign Up</button>
         </div>
       </div>
