@@ -22,42 +22,47 @@ function Signup() {
             </div>
 
 
-            <div className="w-full px-4 md:px-10  lg:w-[60%] mt-10 mb-20">
+            <div className="w-full px-4 md:px-10  lg:w-[60%] mt-6 md:mt-10 mb-20">
 
-                <div className="flex flex-col justify-center items-center w-full gap-6 md:gap-2 md:justify-between md:flex-row">
-
-                    <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
-                        <Image src={'/google.png'} alt="" width={30} height={30} />
-
-                        <p>Sign up with google</p>
-                    </div>
+                <div className="flex flex-col justify-center items-center w-full gap-6 md:gap-10  md:flex-row">
 
 
-                    <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
-                        <Image src={'/microsoft.png'} alt="" width={30} height={30} />
-
-                        <p>Sign up with facebook</p>
-                    </div>
-
-                    <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
+                <div className="text-xl md:text-[12px] ml-7 md:ml-0 flex items-center gap-10 md:gap-2">
                         <Image src={'/facebook.png'} alt="" width={30} height={30} />
 
                         <p>Sign up with facebook</p>
                     </div>
 
+                <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
+                        <Image src={'/google.png'} alt="" width={30} height={30} />
 
+                        <p>Sign up with google</p>
+                    </div>
+
+                   
+
+
+                    {/* 
                     <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
+                        <Image src={'/microsoft.png'} alt="" width={30} height={30} />
+
+                        <p>Sign up with facebook</p>
+                    </div> */}
+
+
+                    {/* <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
                         <Image src={'/apple.png'} alt="" width={30} height={30} />
 
                         <p>Sign up with facebook</p>
-                    </div>
+                    </div> */}
+
                 </div>
 
 
-                <div className="flex items-center justify-center md:gap-4 py-4 w-full">
-                    <p className="border-b-2 w-[20%] md:w-[30%] border-primary"></p>
+                <div className="flex items-center justify-center md:gap-4 py-4 w-full mt-[2em]">
+                    <p className="border-b-2 w-[25%] border-primary"></p>
                     <p>Or sign up with Email</p>
-                    <p className="border-b-2 w-[20%] md:w-[30%] border-primary"></p>
+                    <p className="border-b-2 w-[25%] border-primary"></p>
                 </div>
 
 
@@ -91,7 +96,7 @@ function Signup() {
                             </fieldset>
 
 
-                            
+
                             <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
                                 <legend>Comfirm Password</legend>
                                 <div className="flex px-2 ">
@@ -111,7 +116,7 @@ function Signup() {
                             </div>
                         </form>
 
-                     
+
 
                         <div className="mt-4">
                             <button type='submit' className="w-full h-12 bg-black text-white rounded-lg hover:bg-">Sign Up</button>
