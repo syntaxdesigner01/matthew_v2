@@ -9,10 +9,10 @@ export default function Services() {
         </h1>
       </div>
 
-      <div className="pt-20">
+      <div className="lg:pt-20 ">
         {/* feature 1 */}
-        <div className="flex justify-evenly items-center">
-          <div className="w-[50%]">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center mt-20 lg:mt-0">
+          <div className="w-full lg:w-[50%]">
             <h1 className="font-bold text-xl">
               {" "}
               <span className="text-primary">Easy</span> To Use
@@ -34,13 +34,14 @@ export default function Services() {
 
 
          {/* feature 2 */}
-         <div className="flex justify-evenly items-center">
+         <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center mt-20 lg:mt-0
+">
 
          <div>
             <Image src={"/productivity.png"} alt="" width={400} height={300} />
           </div>
 
-          <div className="w-[50%]">
+          <div className="w-full lg:w-[50%]">
             <h1 className="font-bold text-xl">
               {" "}
               <span className="text-primary">Productivity</span> Focused
@@ -56,8 +57,8 @@ export default function Services() {
 
 
   {/* feature 3 */}
-  <div className="flex justify-evenly items-center">
-          <div className="w-[50%]">
+  <div className="flex flex-col lg:flex-row justify-evenly items-center mt-20 lg:mt-0">
+          <div className="w-full lg:w-[50%]">
             <h1 className="font-bold text-xl">
               {" "}
               <span className="text-primary">Generate</span> Report

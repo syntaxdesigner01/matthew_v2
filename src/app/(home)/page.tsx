@@ -29,7 +29,7 @@ export default function Home() {
             <Header />
           </header>
 
-          <main className="px-10 my-20">
+          <main className="px-4 lg:px-10 my-20">
             <Services />
 
             <AboutUs />
