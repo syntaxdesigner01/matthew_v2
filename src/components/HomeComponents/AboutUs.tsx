@@ -10,8 +10,8 @@ export default function AboutUs() {
     </div>
 
     <div className="flex justify-center  items-center pt-10">
-      <div className="w-[70%] text-center -tracking-normal">
-        <p className="text-center leading-loose">
+      <div className="w-full lg:w-[70%]  lg:text-center -tracking-normal">
+        <p className="text-justify lg:text-center leading-loose">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
           atque laborum dicta. Quas eum voluptatum consequatur? Sed,
           eligendi eum? Pariatur ad laudantium alias, vitae vel
