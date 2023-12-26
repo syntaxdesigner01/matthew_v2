@@ -12,7 +12,7 @@ export default function Navbar() {
         <Image src={"/logo.svg"} alt="" width={200} height={100} />
       </div>
 
-      <div className="hidden lg:flex gap-20 justify-center pt-4 border-b-4 border-primary px-10 pb-2 rounded-sm">
+      <div className="hidden md:flex gap-20 justify-center pt-4 border-b-4 border-primary px-10 pb-2 rounded-sm">
         <ul className="flex gap-10 items-center ">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Docs</li>

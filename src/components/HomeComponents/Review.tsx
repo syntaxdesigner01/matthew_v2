@@ -4,7 +4,7 @@ function Review() {
     return (
         <div className="mt-20">
             <div className="flex justify-center items-center text-center">
-                <h1 className="border-b-4 border-primary px-10  font-bold tracking-wider text-xl lg:text-2xl pb-4">
+                <h1 className="border-b-4 border-primary px-10  font-bold tracking-wider text-lg md:text-2xl pb-4">
                     <span className="text-primary">Re</span>views
                     <p className="py-4 hidden">
                         Lorem ipsum, dolor sit amet <br />
@@ -14,7 +14,7 @@ function Review() {
             </div>
 
 
-            <div className="mt-20 flex gap-4 overflow-x-scroll lg:overflow-hidden">
+            <div className="mt-20 flex gap-4 overflow-x-scroll md:overflow-hidden">
                             {/* revew1 */}
                             <div className="border-2 rounded-lg p-4  border-primary shadow-2xl bg-white">
                     <div className="flex justify-between items-center gap-2">
