@@ -27,19 +27,19 @@ function Signup() {
                 <div className="flex flex-col justify-center items-center w-full gap-6 md:gap-10  md:flex-row">
 
 
-                <div className="text-xl md:text-[12px] ml-7 md:ml-0 flex items-center gap-10 md:gap-2">
+                    <div className="text-xl md:text-[12px] ml-7 md:ml-0 flex items-center gap-10 md:gap-2">
                         <Image src={'/facebook.png'} alt="" width={30} height={30} />
 
                         <p>Sign up with facebook</p>
                     </div>
 
-                <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
+                    <div className="text-xl md:text-[12px] flex items-center gap-10 md:gap-2">
                         <Image src={'/google.png'} alt="" width={30} height={30} />
 
                         <p>Sign up with google</p>
                     </div>
 
-                   
+
 
 
                     {/* 
