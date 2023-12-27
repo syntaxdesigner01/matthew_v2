@@ -7,12 +7,12 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="flex fixed w-full top-0 z-50 items-center gap-32  bg-bgDark px-20 text-white py-4 shadow-xl">
+    <nav className="flex justify-between lg:justify-normal fixed w-full top-0 z-50 items-center gap-32  bg-bgDark px-20 text-white py-4 shadow-xl">
       <div>
         <Image src={"/logo.svg"} alt="" width={200} height={100} />
       </div>
 
-      <div className="flex gap-20 justify-center pt-4 border-b-4 border-primary px-10 pb-2 rounded-sm">
+      <div className="hidden lg:flex gap-20 justify-center pt-4 border-b-4 border-primary px-10 pb-2 rounded-sm">
         <ul className="flex gap-10 items-center ">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Docs</li>
@@ -24,6 +24,8 @@ export default function Navbar() {
           <button onClick={()=>router.push(routes.signup)} className="bg-primary px-8 py-2 rounded-xl ">Sign Up</button>
         </div>
       </div>
+
+      <button className="lg:hidden">menu</button>
     </nav>
   );
 }

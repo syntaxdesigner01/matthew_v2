@@ -4,14 +4,14 @@ export default function AboutUs() {
   return (
     <div className="mt-20">
     <div className="flex justify-center">
-      <h1 className="border-b-4 border-primary px-10  font-bold tracking-wider text-2xl pb-4">
+      <h1 className="border-b-4 border-primary px-10  font-bold tracking-wider text-lg md:text-2xl pb-4">
         <span className="text-primary">About</span> Us
       </h1>
     </div>
 
     <div className="flex justify-center  items-center pt-10">
-      <div className="w-[70%] text-center -tracking-normal">
-        <p className="text-center leading-loose">
+      <div className="w-full md:w-[70%]  md:text-center -tracking-normal">
+        <p className="text-justify md:text-center md:leading-loose">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
           atque laborum dicta. Quas eum voluptatum consequatur? Sed,
           eligendi eum? Pariatur ad laudantium alias, vitae vel
