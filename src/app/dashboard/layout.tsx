@@ -20,7 +20,7 @@ export default function DashboardLayout({
     <html lang="en">
       <body className={inter.className}>
         <DashboardNav/>
-        <div className='flex flex-row'>
+        <div className='flex flex-row gap-10'>
             <SideMenu/>
           <main>
           {children}
