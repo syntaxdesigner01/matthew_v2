@@ -4,7 +4,7 @@ export default function SideMenu() {
     return (
         <div className="shadow-xl z-50 border-r-4 border-primary w-[8%] h-[100vh] flex flex-row justify-center  pt-16">
             <div className="flex flex-col items-center">
-                <div>
+                <div className="border-b-4 border-black pb-4">
                     <Image src={'/user.svg'} alt="avater" height={50} width={50} />
                 </div>
 
