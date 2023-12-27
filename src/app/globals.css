@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: ub;
+    src: url('/public/fonts/Urbanist-VariableFont_wght.ttf');
+}
+
+
+body{
+    font-family: ub;
+}
