@@ -1,14 +1,13 @@
-'use client'
+
+import LoginForm from "@/components/LoginForm"
 import { routes } from "@/routes/routes"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-import { FiEye, FiEyeOff } from "react-icons/fi"
+
 
 
 function Login() {
 
-    const [showPass, setShowPass] = useState(false)
     return (
         <div className="flex flex-col gap-2 w-screen h-full mt-20 items-center justify-center">
             {/* <Navbar/> */}
@@ -49,26 +48,7 @@ function Login() {
                 <div className="flex justify-center">
                     <div className="border-2 bg-white border-slate-200 shadow-xl p-4 md:p-10 rounded-tr-3xl rounded-bl-3xl rounded-md w-full lg:w-[80%] ">
 
-                        <form className=" flex flex-col gap-10">
-                            <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
-                                <legend className="">Your Email</legend>
-                                <input type='email' placeholder='' required className="w-full outline-none  h-full px-4" />
-                            </fieldset>
-
-
-                            <fieldset className="border-2 border-[#0000004D] rounded-md py-1">
-                                <legend>Password</legend>
-                                <div className="flex px-2 ">
-                                    <input type={showPass ? 'text' : 'password'} placeholder='' required className="w-full h-full outline-none  px-4" />
-
-                                    {
-                                        showPass ?
-                                            <FiEyeOff size={20} onClick={() => setShowPass(!showPass)} /> :
-                                            <FiEye size={20} onClick={() => setShowPass(!showPass)} />
-                                    }
-                                </div>
-                            </fieldset>
-                        </form>
+                       <LoginForm/>
 
                         <div className="flex justify-between mt-4 font-semibold text-sm ">
                             <Link href={routes.signup}>Remember Password? <span className="text-primary">Login</span></Link>
