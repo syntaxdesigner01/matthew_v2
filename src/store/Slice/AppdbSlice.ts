@@ -1,8 +1,9 @@
 import { createSlice, } from "@reduxjs/toolkit";
 
+type project= Array<any>
 
-const initialState = {
-    projects: [],
+const initialState  = {
+    projects: [] as project ,
 
 }
 
@@ -11,12 +12,11 @@ const Appdb = createSlice({
     initialState,
     reducers: {
         createProject: (state, action) => {
-            const data = {
+            const data:data = {
                 projectName: action.payload.name,
                 projectDescription: action.payload.description
             }
-
-            // state.projects.push (data)
+            state.projects.push (data)
         }
     }
 })

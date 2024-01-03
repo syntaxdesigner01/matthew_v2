@@ -2,5 +2,6 @@
 login:'/auth/login',
 signup:'/auth/signup',
 forgotpassword:'/auth/forgotpassword',
-home:'/'
+home:'/',
+dashboard:'/dashboard'
 }
