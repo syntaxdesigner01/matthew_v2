@@ -1,5 +1,5 @@
 import SignupForm from "@/components/SignupForm"
-import { routes } from "@/routes/routes"
+import { routes } from "../../../../routes/routes"
 import Image from "next/image"
 import Link from "next/link"
 

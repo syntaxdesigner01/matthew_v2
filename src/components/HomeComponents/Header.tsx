@@ -1,4 +1,4 @@
-import { routes } from "@/routes/routes";
+import { routes } from "../../../routes/routes";
 import Image from "next/image"
 import { useRouter } from "next/navigation";
 
