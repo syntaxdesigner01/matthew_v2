@@ -8,7 +8,7 @@ export default function DashBoard() {
       <div className='text-center flex flex-col justify-center gap-4 font-bold text-lg'>
         <h1><span className='text-primary'>Taking</span> Your <span className='text-primary'>Productivity</span> To <span className='text-primary'>Maximum</span></h1>
         <p>optimizing both time and effort. <br />
-          Focus more on creativity...let's handle productivity</p>
+          Focus more on creativity...let&apos;s handle productivity</p>
       </div>
 
 
