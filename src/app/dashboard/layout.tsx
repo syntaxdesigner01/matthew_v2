@@ -3,8 +3,10 @@ import { Inter } from 'next/font/google'
 import '../globals.css'
 import DashboardNav from '@/components/DashboardComponents/DashboardNav'
 import SideMenu from '@/components/DashboardComponents/SideMenu'
+import ReduxProvider from '../../../Provider/ReduxProvider'
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -19,14 +21,16 @@ export default function DashboardLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <DashboardNav/>
-        <div className='flex flex-row gap-10 w-full'>
-            <SideMenu/>
-          <main className='w-full'>
-          {children}
-          </main>
-        </div>
-        </body>
+          <DashboardNav />
+          <div className='flex flex-row gap-10 w-full'>
+            <SideMenu />
+            <main className='w-full'>
+             <ReduxProvider>
+             {children}
+             </ReduxProvider>
+            </main>
+          </div>
+      </body>
     </html>
   )
 }
