@@ -1,11 +1,25 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, } from "@reduxjs/toolkit";
 
- const Appdb = createSlice({
+
+const initialState = {
+    projects: [],
+
+}
+
+const Appdb = createSlice({
     name: "app",
-    initialState:[],
-    reducers:{}
- })
+    initialState,
+    reducers: {
+        createProject: (state, action) => {
+            const data = {
+                projectName: action.payload.name,
+                projectDescription: action.payload.description
+            }
+
+            // state.projects.push (data)
+        }
+    }
+})
 
 
- export default Appdb.reducer
- 
+export default Appdb.reducer
