@@ -21,5 +21,5 @@ const Appdb = createSlice({
     }
 })
 
-
+export const {createProject} = Appdb.actions
 export default Appdb.reducer

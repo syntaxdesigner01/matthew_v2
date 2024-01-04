@@ -3,5 +3,8 @@ login:'/auth/login',
 signup:'/auth/signup',
 forgotpassword:'/auth/forgotpassword',
 home:'/',
-dashboard:'/dashboard'
+dashboard:'/dashboard',
+project:'/dashboard/project',
+chat:'/dashboard/chat',
+notification:'/dashboard/notification',
 }
