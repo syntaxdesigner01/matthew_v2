@@ -3,7 +3,11 @@ import { createSlice, } from "@reduxjs/toolkit";
 type project= Array<any>
 
 const initialState  = {
-    projects: [] as project ,
+    projects: [
+        {projectName:'test',
+        projectDescription:'this ia a test data'
+    }
+    ] as project ,
 
 }
 

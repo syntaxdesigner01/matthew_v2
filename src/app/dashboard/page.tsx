@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
+import { routes } from '../../../routes/routes'
+import Link from 'next/link'
 
 export default function DashBoard() {
+ 
   return (
     <div className='w-full pt-8  px-10'>
 
@@ -18,7 +21,7 @@ export default function DashBoard() {
         </div>
 
         <div>
-          <button className='bg-black text-primary px-20 py-4 rounded-tr-2xl rounded-bl-2xl '>Start Project</button>
+          <Link href={routes.project} className='bg-black text-primary px-20 py-4 rounded-tr-2xl rounded-bl-2xl '>Start Project</Link>
         </div>
         <div>
           <Image src={'/team.png'} alt='' width={250} height={250} />
