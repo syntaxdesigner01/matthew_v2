@@ -4,6 +4,7 @@ import NoProject from '@/components/DashboardComponents/NoProject';
 import { RootState } from '@/store/store';
 import { useEffect, useState } from 'react';
 import {useSelector } from 'react-redux'
+import CreateProject from './createproject/page';
 
 export default function Project() {
   const projects = useSelector((state: RootState) => state.projects)
@@ -23,7 +24,7 @@ export default function Project() {
 
           {
             isProject ?
-              <NoProject />
+             <CreateProject/>
               :
 
               <AllProjects/>

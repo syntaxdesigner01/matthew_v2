@@ -10,9 +10,8 @@ export default function NoProject() {
     const [switchApp, setSwitchApp] = useState<Boolean>(false)
     return (
         <>
-            {
-                !switchApp ?
-                    <>
+         
+                    
                         <p className='text-center font-bold'>Sorry you have no Project at the moment. Please <br /> kindly create a New Project </p>
 
                         <div className='flex justify-center '>
@@ -25,10 +24,7 @@ export default function NoProject() {
                             </button>
 
                         </div>
-                    </>:
-
-                    <CreateProject/>
-    }
+ 
         </>
     )
 }

@@ -1,4 +1,5 @@
 'use client'
+import NoProject from "@/components/DashboardComponents/NoProject";
 import { createProject } from "@/store/Slice/AppdbSlice";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
@@ -21,7 +22,15 @@ export default function CreateProject() {
     }
 
     return (
-        <form onSubmit={saveData}>
+        <>
+        <NoProject/>
+        </>
+
+    )
+}
+
+
+{/* <form onSubmit={saveData}>
             <h1 className="text-center pb-6 font-bold text-xl">Create <span className="text-primary">New Project</span> </h1>
             <div>
                 <input type="text" ref={name} name='name' placeholder='Project Name' className='border-2 w-full px-4 py-4 rounded-md' required />
@@ -31,7 +40,4 @@ export default function CreateProject() {
             </div>
 
             <button type='submit' className='w-full text-primary bg-black py-2 rounded-md mt-10' >Create New Project</button>
-        </form>
-
-    )
-}
+        </form> */}
