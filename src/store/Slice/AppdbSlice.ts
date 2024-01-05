@@ -4,10 +4,12 @@ type project= Array<any>
 
 const initialState  = {
     projects: [
-        {projectName:'test',
-        projectDescription:'this ia a test data'
-    }
+    //     {projectName:'test',
+    //     projectDescription:'this ia a test data'
+    // }
     ] as project ,
+
+    
 
 }
 

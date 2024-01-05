@@ -1,4 +1,3 @@
-// import { addProject } from "@/store/Dispatch/Dispatcher";
 'use client'
 import { createProject } from "@/store/Slice/AppdbSlice";
 import { useRef } from "react";
@@ -23,7 +22,7 @@ export default function CreateProject() {
 
     return (
         <form onSubmit={saveData}>
-            <h1>Create New Project </h1>
+            <h1 className="text-center pb-6 font-bold text-xl">Create <span className="text-primary">New Project</span> </h1>
             <div>
                 <input type="text" ref={name} name='name' placeholder='Project Name' className='border-2 w-full px-4 py-4 rounded-md' required />
             </div>

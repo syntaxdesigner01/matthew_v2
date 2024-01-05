@@ -1,5 +1,5 @@
 'use client'
-import CreateProject from '@/components/DashboardComponents/CreateProject';
+import AllProjects from '@/components/DashboardComponents/AllProjects';
 import NoProject from '@/components/DashboardComponents/NoProject';
 import { RootState } from '@/store/store';
 import { useEffect, useState } from 'react';
@@ -25,8 +25,8 @@ export default function Project() {
             isProject ?
               <NoProject />
               :
-              <CreateProject />
 
+              <AllProjects/>
           }
         </div>
         <div>
