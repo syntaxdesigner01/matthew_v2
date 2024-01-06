@@ -1,12 +1,12 @@
 type data={
-	id:string,
+	id:number,
 	projectName: string,
     projectDescription: string,
    
 }
 
 type mileStone=  {
-		id:string,
+		id:number,
 		name: string,
 		tasks: [
 			{ name: string, isDone: boolean }

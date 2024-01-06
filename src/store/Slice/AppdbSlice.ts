@@ -22,7 +22,7 @@ const Appdb = createSlice({
     reducers: {
         createProject: (state, action) => {
             const data:data = {
-                id:randomUUID(),
+                id:Date.now(),
                 projectName: action.payload.name,
                 projectDescription: action.payload.description
             }
