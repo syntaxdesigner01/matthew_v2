@@ -1,10 +1,14 @@
 import { createSlice, } from "@reduxjs/toolkit";
+import { randomUUID } from "crypto";
+
 
 type project= Array<any>
 
 const initialState  = {
     projects: [
-        {projectName:'test',
+        {
+            id:1,
+            projectName:'test',
         projectDescription:'this ia a test data'
     }
     ] as project ,
@@ -18,6 +22,7 @@ const Appdb = createSlice({
     reducers: {
         createProject: (state, action) => {
             const data:data = {
+                id:randomUUID(),
                 projectName: action.payload.name,
                 projectDescription: action.payload.description
             }
