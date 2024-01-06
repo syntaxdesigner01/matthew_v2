@@ -24,11 +24,11 @@ const Appdb = createSlice({
             }
             state.projects.push (data)
         },
-        switchProjectScreen:(state,action)=>{
+        switchCreateProjectScreen:(state,action)=>{
             state.showProjectScreen = action.payload
         }
     }
 })
 
-export const {createProject,switchProjectScreen} = Appdb.actions
+export const {createProject,switchCreateProjectScreen} = Appdb.actions
 export default Appdb.reducer

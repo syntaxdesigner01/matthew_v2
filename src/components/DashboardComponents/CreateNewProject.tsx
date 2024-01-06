@@ -7,6 +7,10 @@ import { success } from "../../../lib/Toast";
 import { useRouter } from "next/navigation";
 import { routes } from "../../../routes/routes";
 
+/**
+ * 
+ * @description : This component creates new project  
+ */
 
 export default function CreateNewProject() {
 

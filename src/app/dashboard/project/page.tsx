@@ -6,7 +6,10 @@ import { useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation';
 import { routes } from '../../../../routes/routes';
 
-
+/**
+ * 
+ * @description :Project home page
+ */
 export default function Project() {
   const projects = useSelector((state: RootState) => state.projects)
   const [isProject, setIsProject] = useState<boolean>(false)
