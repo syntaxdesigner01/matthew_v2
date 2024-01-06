@@ -9,11 +9,11 @@ import { useDispatch, useSelector } from "react-redux";
 
 export default function NoProject(retset:any) {
     
-    const switchScreen = useSelector((state: RootState) => state.showProjectScreen)
+
    const dispatch = useDispatch()
 
    function switchDisplay(){
-    dispatch(switchScreen(true))
+    dispatch(switchProjectScreen(true))
    }
 
     return (
