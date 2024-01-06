@@ -3,7 +3,6 @@ import AllProjects from '@/components/DashboardComponents/AllProjects';
 import { RootState } from '@/store/store';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux'
-import CreateProject from './createproject/page';
 import { useRouter } from 'next/navigation';
 import { routes } from '../../../../routes/routes';
 

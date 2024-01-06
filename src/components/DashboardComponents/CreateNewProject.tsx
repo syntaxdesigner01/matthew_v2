@@ -23,8 +23,6 @@ export default function CreateNewProject() {
         dispatch(createProject({ description: description.current?.value, name: name.current?.value }))
         success('created!')
         route.push(routes.project)
-        console.log(name.current?.value);
-
     }
 
     return (
