@@ -9,7 +9,7 @@ const initialState  = {
     // }
     ] as project ,
 
-    
+    showProjectScreen: false
 
 }
 
@@ -23,9 +23,12 @@ const Appdb = createSlice({
                 projectDescription: action.payload.description
             }
             state.projects.push (data)
+        },
+        switchProjectScreen:(state,action)=>{
+            state.showProjectScreen = action.payload
         }
     }
 })
 
-export const {createProject} = Appdb.actions
+export const {createProject,switchProjectScreen} = Appdb.actions
 export default Appdb.reducer
