@@ -21,7 +21,7 @@ export default function DashBoard() {
         </div>
 
         <div>
-          <Link href={routes.project} className='bg-black text-primary px-20 py-4 rounded-tr-2xl rounded-bl-2xl '>Start Project</Link>
+          <Link href={routes.createProject} className='bg-black text-primary px-20 py-4 rounded-tr-2xl rounded-bl-2xl '>Start Project</Link>
         </div>
         <div>
           <Image src={'/team.png'} alt='' width={250} height={250} />

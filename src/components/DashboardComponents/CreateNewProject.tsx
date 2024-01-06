@@ -1,7 +1,11 @@
 'use client'
 import { createProject } from "@/store/Slice/AppdbSlice";
 import { useRef } from "react";
+import { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
+import { success } from "../../../lib/Toast";
+import { useRouter } from "next/navigation";
+import { routes } from "../../../routes/routes";
 
 
 export default function CreateNewProject() {
@@ -11,11 +15,14 @@ export default function CreateNewProject() {
     const name = useRef<HTMLInputElement>(null)
     const description = useRef<HTMLTextAreaElement>(null)
 
+    const route = useRouter()
+
     function saveData(e: any) {
         e.preventDefault();
 
         dispatch(createProject({ description: description.current?.value, name: name.current?.value }))
-
+        success('created!')
+        route.push(routes.project)
         console.log(name.current?.value);
 
     }
@@ -31,6 +38,8 @@ export default function CreateNewProject() {
             </div>
 
             <button type='submit' className='w-full text-primary bg-black py-2 rounded-md mt-10' >Create New Project</button>
+
+            <Toaster/>
         </form>
 
     )
