@@ -13,7 +13,7 @@ export default function CreateProject() {
 
     useEffect(() => {
         if (projects.length === 0) setIsProject(false)
-        if (display) setIsProject(true)
+        if (display ===true || projects.length > 0) setIsProject(true)
     }, [display])
 
     

@@ -4,13 +4,12 @@ type project= Array<any>
 
 const initialState  = {
     projects: [
-    //     {projectName:'test',
-    //     projectDescription:'this ia a test data'
-    // }
+        {projectName:'test',
+        projectDescription:'this ia a test data'
+    }
     ] as project ,
-
-    showProjectScreen: false
-
+    showProjectScreen: false,
+    isAdmin:true
 }
 
 const Appdb = createSlice({
