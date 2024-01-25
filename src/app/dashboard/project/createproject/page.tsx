@@ -1,37 +1,37 @@
 'use client'
-import { createProject } from "@/store/Slice/AppdbSlice";
-import { useRef } from "react";
-import { useDispatch } from "react-redux";
-
-
+import CreateNewProject from '@/components/DashboardComponents/CreateNewProject';
+import NoProject from '@/components/DashboardComponents/NoProject'
+import { RootState } from '@/store/store';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux'
 export default function CreateProject() {
 
-    const dispatch = useDispatch()
+    const projects = useSelector((state: RootState) => state.projects)
+    const display = useSelector((state: RootState) => state.showProjectScreen)
+    const [isProject, setIsProject] = useState<boolean>(false)
 
-    const name = useRef<HTMLInputElement>(null)
-    const description = useRef<HTMLTextAreaElement>(null)
 
-    function saveData(e: any) {
-        e.preventDefault();
+    useEffect(() => {
+        if (projects.length === 0) setIsProject(false)
+        if (display ===true || projects.length > 0) setIsProject(true)
+    }, [display])
 
-        dispatch(createProject({ description: description.current?.value, name: name.current?.value }))
-
-        console.log(name.current?.value);
-
-    }
-
+    
+    
     return (
-        <form onSubmit={saveData}>
-            <h1 className="text-center pb-6 font-bold text-xl">Create <span className="text-primary">New Project</span> </h1>
-            <div>
-                <input type="text" ref={name} name='name' placeholder='Project Name' className='border-2 w-full px-4 py-4 rounded-md' required />
+
+        <div className='flex w-full h-full justify-center items-center'>
+            <div className={`z-50 w-[40%] border shadow-xl p-10 ${!isProject ? 'rounded-tr-[12%] rounded-bl-[12%] rounded-2xl' : 'rounded-tr-[17%] rounded-bl-[17%] rounded-lg'} flex flex-col gap-10`}>
+
+               {
+                isProject  === false? 
+                <NoProject />:
+                <CreateNewProject/>
+               }
             </div>
             <div>
-                <textarea ref={description} name="description" id="" placeholder='Description' cols={10} rows={10} className='border-2 w-full mt-4 rounded-md p-4' required />
+                <img src="/projectAvater.png" alt="" height={250} width={200} />
             </div>
-
-            <button type='submit' className='w-full text-primary bg-black py-2 rounded-md mt-10' >Create New Project</button>
-        </form>
-
+        </div>
     )
 }

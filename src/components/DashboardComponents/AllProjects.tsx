@@ -1,7 +1,21 @@
+'use client'
 
+import { RootState } from "@/store/store"
+import { useSelector } from "react-redux"
 
 export default function AllProjects() {
+  const projects = useSelector((state: RootState) => state.projects)
+
+
   return (
-    <div>AllProjects</div>
+    <div>{
+      projects.map(project => {
+        return(
+          <>
+          <p>{project?.projectName}</p>
+          </>
+        )
+      })
+    }</div>
   )
 }
