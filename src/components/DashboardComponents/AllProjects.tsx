@@ -13,7 +13,6 @@ export default function AllProjects() {
         return(
           <>
           <p>{project?.projectName}</p>
-          <p>{project?.projectDescription}</p>
           </>
         )
       })

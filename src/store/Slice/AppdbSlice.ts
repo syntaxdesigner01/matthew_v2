@@ -13,7 +13,8 @@ const initialState  = {
     }
     ] as project ,
     showProjectScreen: false,
-    isAdmin:true
+    isAdmin:true,
+    isAuth:true
 }
 
 const Appdb = createSlice({
