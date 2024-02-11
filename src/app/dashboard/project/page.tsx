@@ -13,6 +13,7 @@ import { routes } from '../../../../routes/routes';
 export default function Project() {
   const projects = useSelector((state: RootState) => state.projects)
   const [isProject, setIsProject] = useState<boolean>(false)
+  const a = 'hello'
 
 const route = useRouter()
   useEffect(() => {
